@@ -1,7 +1,7 @@
 class Transfer
   # your code here
   def initialize(from, to, amt)
-    @from = from 
+    @sender = from 
     @to = to 
     @amt = amt
   end 
