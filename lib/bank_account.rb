@@ -1,5 +1,6 @@
 class BankAccount
-  attr_reader :name, :balance, :status
+  attr_reader :name, :status
+  attr_accessor :balance
   def initialize(name)
     @name = name 
     @balance = 1000
@@ -14,4 +15,7 @@ class BankAccount
     "Your balance is $#{@balance}." 
   end
   
+  def valid? 
+    if @status == "open" &&  @balance > 0 
+      
 end
