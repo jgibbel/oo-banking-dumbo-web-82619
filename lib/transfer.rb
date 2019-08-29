@@ -4,4 +4,5 @@ class Transfer
     @from = from 
     @to = to 
     @amt = amt
+  end 
 end
