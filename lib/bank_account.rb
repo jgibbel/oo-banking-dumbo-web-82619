@@ -19,9 +19,11 @@ class BankAccount
     input
   end 
   
-  def valid?(acct) 
-    if acct.status == "open" &&  acct.balance > 0 
+  def valid? 
+    if @status == "open" &&  @balance > 0 
       true 
+    elsif @status == "closed"
+      false 
     else false 
     end 
   end 
