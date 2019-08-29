@@ -16,15 +16,14 @@ class BankAccount
   end
   
   def status=(input)
-    input
+    @status = input
   end 
   
   def valid? 
     if (@status == "open" && @balance > 0)
       true 
-    elsif @status == "closed"
+    else @status == "closed"
       false 
-    else false 
     end 
   end 
       
